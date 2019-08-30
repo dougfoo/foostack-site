@@ -1,3 +1,7 @@
+To be hosted on [http://foostack.ai](http://foostack.ai)
+
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
