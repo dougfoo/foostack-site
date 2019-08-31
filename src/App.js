@@ -105,8 +105,8 @@ export default function FooStack() {
             </Typography>
             <Typography variant="h5" align="center" color="textSecondary" paragraph>
               FooStack focuses on a proper full stack solution, weaving technologies together
-              such as Javascript/React, Python/Django, Cloud/Azure, ML Libraries like Sckit/PyTorch,
-              data prep pipelines and storage (SQL, Hadoop, Snowflake, etc)). 
+              such as Javascript/React, Python/Django, Cloud/Azure, ML Libraries like Sckit/PyTorch/H2o,
+              data prep pipelines and storage (Alteryx, Trifacta, SQL, NoSQL/Hadoop, CloudDW/Snowflake, etc)). 
             </Typography>
             <div className={classes.heroButtons}>
               <Grid container spacing={2} justify="center">
