@@ -70,7 +70,7 @@ const galleryInfo = [
   },
   {
     heading: 'Ski Planning',
-    text: 'Plan your ski holiday based on weather statistics (React+D3 and Spark/DataBricks)',
+    text: 'Plan your ski holiday based on weather statistics (React + D3 (Victory) and Spark/DataBricks)',
     imageLink: 'https://source.unsplash.com/random?2',
     viewLink: 'http://ski-forecast.foostack.ai/',
   },
@@ -105,7 +105,8 @@ export default function FooStack() {
             </Typography>
             <Typography variant="h5" align="center" color="textSecondary" paragraph>
               FooStack focuses on a proper full stack solution, weaving technologies together
-              such as Javascript/React, Python/Django, Cloud/Azure, Spark, PyTorch and more. 
+              such as Javascript/React, Python/Django, Cloud/Azure, ML Libraries like Sckit/PyTorch,
+              data prep pipelines and storage (SQL, Hadoop, Snowflake, etc)). 
             </Typography>
             <div className={classes.heroButtons}>
               <Grid container spacing={2} justify="center">
