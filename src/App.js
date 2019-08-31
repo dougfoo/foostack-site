@@ -10,9 +10,14 @@ import CssBaseline from '@material-ui/core/CssBaseline';
 import Grid from '@material-ui/core/Grid';
 import Toolbar from '@material-ui/core/Toolbar';
 import Typography from '@material-ui/core/Typography';
-import { makeStyles } from '@material-ui/core/styles';
 import Container from '@material-ui/core/Container';
 import Link from '@material-ui/core/Link';
+import { makeStyles } from '@material-ui/core/styles';
+import Dialog from '@material-ui/core/Dialog';
+import DialogActions from '@material-ui/core/DialogActions';
+import DialogContent from '@material-ui/core/DialogContent';
+import DialogContentText from '@material-ui/core/DialogContentText';
+import DialogTitle from '@material-ui/core/DialogTitle';
 
 function Copyright() {
   return (
@@ -30,7 +35,16 @@ function Copyright() {
   );
 }
 const useStyles = makeStyles(theme => ({
+  root: {
+    flexGrow: 1,
+  },  
+  title: {
+    flexGrow: 1,
+  },
   icon: {
+    marginRight: theme.spacing(2),
+  },
+  menuButton: {
     marginRight: theme.spacing(2),
   },
   heroContent: {
@@ -59,6 +73,18 @@ const useStyles = makeStyles(theme => ({
     backgroundColor: theme.palette.background.paper,
     padding: theme.spacing(6),
   },
+  closeButton: {
+    position: 'absolute',
+    right: theme.spacing(1),
+    top: theme.spacing(1),
+    color: theme.palette.grey[500],
+  },
+  paper: {
+    backgroundColor: theme.palette.background.paper,
+    border: '2px solid #000',
+    boxShadow: theme.shadows[5],
+    padding: theme.spacing(2, 4, 3),
+  },
 }));
 
 const galleryInfo = [
@@ -84,19 +110,69 @@ const galleryInfo = [
 
 export default function FooStack() {
   const classes = useStyles();
+  const [open, setOpen] = React.useState(false);
+  const dialogHeader = "Placeholder for Header";
+  const dialogBody = "Placeholder for Modal/Dialog Body";
+
+  const handleClickOpen = () => {
+    setOpen(true);
+  };
+  const handleClose = () => {
+    setOpen(false);
+  };
+
+  const handleClickOpenStack = () => {
+    setOpen(true);
+  };
+
+  const handleClickOpenAbout = () => {
+    setOpen(true);
+  };
 
   return (
     <React.Fragment>
       <CssBaseline />
       <AppBar position="relative">
         <Toolbar>
-          <WifiIcon className={classes.icon} />
-          <Typography variant="h6" color="inherit" noWrap>
+          <WifiIcon className={classes.icon} >
+          </WifiIcon>
+          <Typography variant="h6" color="inherit" className={classes.title} noWrap>
             FooStack.Ai
           </Typography>
+          <Button color="inherit" onClick={handleClickOpen}>Contact</Button>
         </Toolbar>
       </AppBar>
       <main>
+        <Dialog
+          open={open}
+          onClose={handleClose}
+          aria-labelledby="alert-dialog-title"
+          aria-describedby="alert-dialog-description"
+          maxWidth="md"
+          fullWidth={true}
+          PaperProps={{
+            style: {
+              backgroundColor: '#d4d7dd',
+              boxShadow: '3',
+            },
+          }}
+        >
+          <DialogTitle id="alert-dialog-title">{dialogHeader}</DialogTitle>
+          <DialogContent>
+            <DialogContentText id="alert-dialog-description">
+              {dialogBody}
+            </DialogContentText>
+          </DialogContent>
+          <DialogActions>
+            <Button onClick={handleClose} color="primary">
+              Send
+            </Button>
+            <Button onClick={handleClose} color="primary" autoFocus>
+              Cancel
+            </Button>
+          </DialogActions>
+        </Dialog>
+
         {/* Hero unit */}
         <div className={classes.heroContent}>
           <Container maxWidth="sm">
@@ -109,12 +185,12 @@ export default function FooStack() {
             <div className={classes.heroButtons}>
               <Grid container spacing={2} justify="center">
                 <Grid item>
-                  <Button variant="contained" color="primary">
+                  <Button variant="contained" color="primary" onClick={handleClickOpenStack}>
                     Full Stack Solutions
                   </Button>
                 </Grid>
                 <Grid item>
-                  <Button variant="outlined" color="primary">
+                  <Button variant="outlined" color="primary" onClick={handleClickOpenAbout}>
                     About FooStack
                   </Button>
                 </Grid>
@@ -150,7 +226,7 @@ export default function FooStack() {
             ))}
           </Grid>
         </Container>
-      </main>
+      </main>      
       {/* Footer */}
       <footer className={classes.footer}>
         <Typography variant="h6" align="center" gutterBottom>
