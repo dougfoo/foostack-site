@@ -76,7 +76,7 @@ const galleryInfo = [
   },
   {
     heading: 'Diamond Pricing',
-    text: 'Price your diamond on the 4C and more (Azure Machine Learning)',
+    text: 'Price your diamond on the 4Cs and more (Azure Machine Learning)',
     imageLink: 'https://source.unsplash.com/random?3',
     viewLink: 'http://diamonds.foostack.ai/',
   },
