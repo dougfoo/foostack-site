@@ -104,10 +104,8 @@ export default function FooStack() {
               FooStack.Ai
             </Typography>
             <Typography variant="h5" align="center" color="textSecondary" paragraph>
-              FooStack focuses on a proper full stack solution, weaving technologies together
-              such as Javascript/React, Python/Django, Cloud/Azure, ML Libraries like Sckit/PyTorch/H2o,
-              data prep pipelines and storage (Alteryx, Trifacta, SQL, NoSQL/Hadoop, CloudDW/Snowflake, etc)). 
-            </Typography>
+              FooStack is about the "Full" solution, weaving technologies together best of breed tech
+              at each layer.  GUI/Presentation, Server logic, Machine Learning, Data Prep and Management</Typography>
             <div className={classes.heroButtons}>
               <Grid container spacing={2} justify="center">
                 <Grid item>
