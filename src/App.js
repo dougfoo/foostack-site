@@ -1,7 +1,7 @@
 import React from 'react';
 import AppBar from '@material-ui/core/AppBar';
 import Button from '@material-ui/core/Button';
-import WifiIcon from '@material-ui/icons/Wifi';
+import ThreeSixtyIcon from '@material-ui/icons/ThreeSixty';
 import Card from '@material-ui/core/Card';
 import CardActions from '@material-ui/core/CardActions';
 import CardContent from '@material-ui/core/CardContent';
@@ -44,6 +44,7 @@ const useStyles = makeStyles(theme => ({
   },
   icon: {
     marginRight: theme.spacing(2),
+    cursor: 'pointer',
   },
   menuButton: {
     marginRight: theme.spacing(2),
@@ -161,8 +162,8 @@ export default function FooStack() {
       <CssBaseline />
       <AppBar position="relative">
         <Toolbar>
-          <WifiIcon className={classes.icon} onClick={() => { document.location.href = '/'; }}>
-          </WifiIcon>
+          <ThreeSixtyIcon className={classes.icon} onClick={() => { document.location.href = '/'; }}>
+          </ThreeSixtyIcon>
           <Link variant="h6" className={classes.title} color="inherit" href="/">
             FooStack.Ai
           </Link>
