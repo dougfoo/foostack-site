@@ -143,8 +143,8 @@ const stackInfo = [
 export default function FooStack() {
   const classes = useStyles();
   const [open, setOpen] = React.useState(false);
-  const dialogHeader = "Placeholder for Header";
-  const dialogBody = "Placeholder for Modal/Dialog Body";
+  const dialogHeader = "Contact Placeholder";
+  const dialogBody = "Placeholder for Contact Form w/ Captcha";
   const AdapterLink = React.forwardRef((props, ref) => <NavLink innerRef={ref} {...props} />);
 
   const handleClickOpen = () => {
@@ -161,7 +161,7 @@ export default function FooStack() {
       <CssBaseline />
       <AppBar position="relative">
         <Toolbar>
-          <WifiIcon className={classes.icon} >
+          <WifiIcon className={classes.icon} onClick={() => { document.location.href = '/'; }}>
           </WifiIcon>
           <Link variant="h6" className={classes.title} color="inherit" href="/">
             FooStack.Ai
