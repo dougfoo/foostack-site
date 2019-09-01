@@ -125,17 +125,17 @@ const stackInfo = [
   },
   {
     heading: 'Machine Learning & Analytics',
-    text: 'Scikit-Learn + Deep Learning frameworks (PyTorch, TensorFlow, H2o.ai, AzureML)',
+    text: 'Scikit-Learn + Deep Learning frameworks (PyTorch, TensorFlow, Spark, AzureML)',
     imageLink: 'https://source.unsplash.com/random?3',
   },
   {
     heading: 'Data Management',
-    text: 'MySQL, Hadoop, Oracle to hosted solutions on Azure (DataBricks/Hadoop, Cloud SQL, Snowflake)',
+    text: 'MySQL, Hadoop, Oracle to hosted solutions on Azure (Hadoop/HDFS, Cloud SQL, Snowflake)',
     imageLink: 'https://source.unsplash.com/random?4',
   },
   {
     heading: 'Integrated CI/CD Env',
-    text: 'Get started with a full CI/CD environment using Azure Pipelines, DevOps Scrum/Kanban and Docker containers',
+    text: 'Get started with a full Agile & CI/CD environment using Azure Pipelines, DevOps Scrum/Kanban and Docker containers',
     imageLink: 'https://source.unsplash.com/random?5',
   },
 ]
@@ -216,13 +216,13 @@ export default function FooStack() {
               </Typography>
               <Typography variant="h6" align="center" color="textSecondary" paragraph>              
                  Doug Foo started coding in Jr High on the Apple II and TRS 80, writing his first adventure games.
-                 Since then he has been a DevOps engineer (before they called it DevOps), Database admin and designer,
+                 Since then he has been a DevOps engineer (before they called it DevOps), DBA and designer,
                  Software developer, System architect, Data Scientist, Development and Program manager, and a Sr Executive.
               </Typography>
               <Typography variant="h6" align="center" color="textSecondary" paragraph>              
                  Doug is one of the few true "full stack" developers who can code front end in React/JS,
-                 backend in Java/Python/C++, build/design rdbms and nosql databases, implement machine learning models,
-                 and setup the entire DevOps pipeline all from scratch.
+                 backend in Java/Python/C++, build/design SQL and NoSQL databases, implement Machine Learning Models,
+                 and setup the entire Agile &apos; DevOps CI/CD Pipeline from scratch.
               </Typography>
             </Container>
           </div>
@@ -230,7 +230,7 @@ export default function FooStack() {
         <Route exact path="/stack" render={() => (
           <Container className={classes.cardGrid} maxWidth="md">
             <Typography variant="h5" align="center" color="textSecondary" paragraph>
-            Best of breed full stack components.
+            Best of breed full stack components for Data Science.
             </Typography>
             <Grid container spacing={4}>
               {stackInfo.map(card => (
@@ -262,7 +262,7 @@ export default function FooStack() {
                   FooStack.Ai
                 </Typography>
                 <Typography variant="h5" align="center" color="textSecondary" paragraph>
-                  FooStack is about the "Full" solution, weaving technologies together best of breed tech
+                  FooStack defines a "Full" Data Science stack, weaving technologies together best of breed tech
                   at each layer.  GUI/Presentation, Server logic, Machine Learning, Data Prep and Management</Typography>
                 <div className={classes.heroButtons}>
                   <Grid container spacing={2} justify="center">
