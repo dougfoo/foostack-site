@@ -18,7 +18,7 @@ import DialogActions from '@material-ui/core/DialogActions';
 import DialogContent from '@material-ui/core/DialogContent';
 import DialogContentText from '@material-ui/core/DialogContentText';
 import DialogTitle from '@material-ui/core/DialogTitle';
-import { BrowserRouter, Route } from 'react-router-dom';
+import { BrowserRouter, Route, NavLink } from 'react-router-dom';
 
 function Copyright() {
   return (
@@ -130,18 +130,13 @@ const stackInfo = [
   },
   {
     heading: 'Data Management',
-    text: 'MySQL, Hadoop, Oracle to hosted solutions on Azure (DataBricks, Cloud SQL)',
+    text: 'MySQL, Hadoop, Oracle to hosted solutions on Azure (DataBricks/Hadoop, Cloud SQL, Snowflake)',
     imageLink: 'https://source.unsplash.com/random?4',
   },
   {
     heading: 'Integrated CI/CD Env',
     text: 'Get started with a full CI/CD environment using Azure Pipelines, DevOps Scrum/Kanban and Docker containers',
     imageLink: 'https://source.unsplash.com/random?5',
-  },
-  {
-    heading: 'Consulting',
-    text: 'Full Stack consulting and project management',
-    imageLink: 'https://source.unsplash.com/random?6',
   },
 ]
 
@@ -150,6 +145,7 @@ export default function FooStack() {
   const [open, setOpen] = React.useState(false);
   const dialogHeader = "Placeholder for Header";
   const dialogBody = "Placeholder for Modal/Dialog Body";
+  const AdapterLink = React.forwardRef((props, ref) => <NavLink innerRef={ref} {...props} />);
 
   const handleClickOpen = () => {
     setOpen(true);
@@ -159,6 +155,8 @@ export default function FooStack() {
   };
 
   return (
+    <BrowserRouter >
+
     <React.Fragment>
       <CssBaseline />
       <AppBar position="relative">
@@ -202,7 +200,6 @@ export default function FooStack() {
       </Dialog>
 
       {/* Hero unit */}
-      <BrowserRouter >
         <Route exact path="/about" render={() => (
           <div className={classes.heroContent}>
             <Container maxWidth="md">
@@ -224,7 +221,7 @@ export default function FooStack() {
               </Typography>
               <Typography variant="h6" align="center" color="textSecondary" paragraph>              
                  Doug is one of the few true "full stack" developers who can code front end in React/JS,
-                 backend in Java/Python/C++, design databases and data warehouses, implement machine learning models,
+                 backend in Java/Python/C++, build/design rdbms and nosql databases, implement machine learning models,
                  and setup the entire DevOps pipeline all from scratch.
               </Typography>
             </Container>
@@ -233,7 +230,7 @@ export default function FooStack() {
         <Route exact path="/stack" render={() => (
           <Container className={classes.cardGrid} maxWidth="md">
             <Typography variant="h5" align="center" color="textSecondary" paragraph>
-            Pick the best tech for each part of your solution.
+            Best of breed full stack components.
             </Typography>
             <Grid container spacing={4}>
               {stackInfo.map(card => (
@@ -270,13 +267,13 @@ export default function FooStack() {
                 <div className={classes.heroButtons}>
                   <Grid container spacing={2} justify="center">
                     <Grid item>
-                      <Button variant="contained" color="primary" href="/stack" >
+                      <Button variant="contained" color="primary" component={AdapterLink} to="/stack">
                         Full Stack Solutions
                       </Button>
                     </Grid>
                     <Grid item>
-                      <Button variant="outlined" color="primary" href="/about">
-                        About FooStack
+                      <Button variant="outlined" color="primary" component={AdapterLink} to="/about">
+                        About Foo
                       </Button>
                     </Grid>
                   </Grid>
@@ -313,7 +310,6 @@ export default function FooStack() {
             </Container>
           </main>   
         )}/>   
-      </BrowserRouter>
       {/* Footer */}
       <footer className={classes.footer}>
         <Typography variant="h6" align="center" gutterBottom>
@@ -326,5 +322,7 @@ export default function FooStack() {
       </footer>
       {/* End footer */}
     </React.Fragment>
+    </BrowserRouter>
+
   );
 }
