@@ -95,21 +95,21 @@ const useStyles = makeStyles(theme => ({
 const galleryInfo = [
   {
     heading: 'Crime Statistics',
-    text: 'Homicide Crime Statistics (Python/Django + Altair)',
+    text: 'Homicide Crime Statistics (Python/Django + Altair) - Live!',
     imageLink: 'https://source.unsplash.com/random?1',
     viewLink: 'http://clt-homicide.foostack.ai/chart/',
   },
   {
     heading: 'Ski Planning',
-    text: 'Plan your ski holiday based on weather statistics (React + D3 (Victory) and Spark/DataBricks)',
+    text: 'Plan your ski holiday based on weather statistics (React + D3 (Victory) and Spark/DataBricks) - Coming Soon!',
     imageLink: 'https://source.unsplash.com/random?2',
-    viewLink: 'http://ski-forecast.foostack.ai/',
+    viewLink: 'http://clt-homicide.foostack.ai/',
   },
   {
     heading: 'Diamond Pricing',
-    text: 'Price your diamond on the 4Cs and more (Azure Machine Learning)',
+    text: 'Price your diamond on the 4Cs and more (Azure Machine Learning) - Coming Soon!',
     imageLink: 'https://source.unsplash.com/random?3',
-    viewLink: 'http://diamonds.foostack.ai/',
+    viewLink: 'http://clt-homicide.foostack.ai/',
   },
 ]
 
