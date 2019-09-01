@@ -3,6 +3,7 @@ import AppBar from '@material-ui/core/AppBar';
 import Button from '@material-ui/core/Button';
 import ThreeSixtyIcon from '@material-ui/icons/ThreeSixty';
 import Card from '@material-ui/core/Card';
+import CardActionArea from '@material-ui/core/CardActionArea';
 import CardActions from '@material-ui/core/CardActions';
 import CardContent from '@material-ui/core/CardContent';
 import CardMedia from '@material-ui/core/CardMedia';
@@ -39,6 +40,13 @@ const useStyles = makeStyles(theme => ({
   root: {
     flexGrow: 1,
   },  
+  content: {
+    flex: '1 0 auto',
+  },
+  details: {
+    display: 'flex',
+    flexDirection: 'column',
+  },
   title: {
     flexGrow: 1,
   },
@@ -65,11 +73,19 @@ const useStyles = makeStyles(theme => ({
     display: 'flex',
     flexDirection: 'column',
   },
+  card2: {
+    display: 'flex',
+  },
   cardMedia: {
     paddingTop: '56.25%', // 16:9
   },
   media: {
     height: 140,
+  },
+  media2: {
+    height: 140,
+    width: 140,
+    paddingLeft: '25%',
   },
   cardContent: {
     flexGrow: 1,
@@ -116,12 +132,12 @@ const galleryInfo = [
 const stackInfo = [
   {
     heading: 'Visualization',
-    text: 'Javascript React + D3.js based Charting',
+    text: 'Javascript React + D3.js based Charting (Altair, Dash, React-Vis',
     imageLink: 'https://source.unsplash.com/random?1',
   },
   {
     heading: 'App Server',
-    text: 'Python Django, Express.js on Azure Hosting',
+    text: 'Python Django, Express.js, Java Spring on Azure',
     imageLink: 'https://source.unsplash.com/random?2',
   },
   {
@@ -135,9 +151,14 @@ const stackInfo = [
     imageLink: 'https://source.unsplash.com/random?4',
   },
   {
+    heading: 'Hosting',
+    text: 'Cloud hosting on Azure and AWS',
+    imageLink: 'https://source.unsplash.com/random?5',
+  },
+  {
     heading: 'Integrated CI/CD Env',
     text: 'Get started with a full Agile & CI/CD environment using Azure Pipelines, DevOps Scrum/Kanban and Docker containers',
-    imageLink: 'https://source.unsplash.com/random?5',
+    imageLink: 'https://source.unsplash.com/random?6',
   },
 ]
 
@@ -209,29 +230,42 @@ export default function FooStack() {
               </Typography>
               <CardMedia
                   className={classes.media}
-                  image='https://source.unsplash.com/random?8'
+                  image='https://live.staticflickr.com/3560/3798751206_726243b057_b.jpg'
               />
               <Typography variant="h6" align="center" color="textSecondary" paragraph>
                 The word "Foo" has a storied history in computer science from the 50's at MIT and the 70's with origins of C and Unix 
                 (K&apos;R).   Foo and bar are common first variables used -- bit of a tech/geek history and play on words.
               </Typography>
               <Typography variant="h6" align="center" color="textSecondary" paragraph>              
-                 Doug Foo started coding in Jr High on the Apple II and TRS 80, writing his first adventure games.
-                 Since then he has been a DevOps engineer (before they called it DevOps), DBA and designer,
-                 Software developer, System architect, Data Scientist, Development and Program manager, and a Sr Executive.
+                 This site is to document exploration of a "full stack" data science platform mixing tech like React/JS,
+                 backend in Java/Python/C++, SQL and NoSQL databases, Machine Learning Models,
+                 using best practice Agile &apos; DevOps CI/CD Pipelines.
               </Typography>
-              <Typography variant="h6" align="center" color="textSecondary" paragraph>              
-                 Doug is one of the few true "full stack" developers who can code front end in React/JS,
-                 backend in Java/Python/C++, build/design SQL and NoSQL databases, implement Machine Learning Models,
-                 and setup the entire Agile &apos; DevOps CI/CD Pipeline from scratch.
-              </Typography>
+              <Card className={classes.card2} >
+                <CardMedia
+                    className={classes.media2}
+                    image='https://lh3.googleusercontent.com/-US0eQeXNjRU/AAAAAAAAAAI/AAAAAAAAAAA/fiUEyuIc0us/photo.jpg?sz=328'
+                />
+                <div className={classes.details}>
+                  <CardContent className={classes.content}>
+                    <Typography align="center" variant="h6" component="h6">
+                      About Doug Foo
+                    </Typography>
+                    <Typography variant="body2" align="center" color="textSecondary" paragraph>              
+                      Doug started coding in Jr High on the Apple II and TRS 80, writing his first adventure games.
+                      Since then he has been a DevOps engineer (before they called it DevOps), DBA and designer,
+                      Software developer, System architect, Data Scientist, Development and Program manager, and a Sr Executive.
+                    </Typography>
+                  </CardContent>
+                </div>
+              </Card>
             </Container>
           </div>
         )} />
         <Route exact path="/stack" render={() => (
           <Container className={classes.cardGrid} maxWidth="md">
             <Typography variant="h5" align="center" color="textSecondary" paragraph>
-            Best of breed full stack components for Data Science.
+            Foo Stack -- current stack of Data Science Technologies.  
             </Typography>
             <Grid container spacing={4}>
               {stackInfo.map(card => (
@@ -263,13 +297,13 @@ export default function FooStack() {
                   FooStack.Ai
                 </Typography>
                 <Typography variant="h5" align="center" color="textSecondary" paragraph>
-                  FooStack defines a "Full" Data Science stack, weaving technologies together best of breed tech
-                  at each layer.  GUI/Presentation, Server logic, Machine Learning, Data Prep and Management</Typography>
+                  FooStack is an attempt to package a "Full Stack" Data Science env - weaving together best of breed
+                  technologies at each layer.  GUI/Presentation, Server logic, Machine Learning, Data Prep and Management</Typography>
                 <div className={classes.heroButtons}>
                   <Grid container spacing={2} justify="center">
                     <Grid item>
                       <Button variant="contained" color="primary" component={AdapterLink} to="/stack">
-                        Full Stack Solutions
+                        Full Stack Details
                       </Button>
                     </Grid>
                     <Grid item>
