@@ -122,9 +122,9 @@ const galleryInfo = [
   },
   {
     heading: 'Diamond Pricing',
-    text: 'Price your diamond on the 4Cs and more (Azure Machine Learning) - Coming Soon!',
+    text: 'Price your diamond on the 4Cs and more (Azure Machine Learning) - Link only to WIP Notebooks for now!',
     imageLink: 'https://source.unsplash.com/random?3',
-    viewLink: 'http://clt-homicide.foostack.ai/',
+    viewLink: 'https://github.com/dougfoo/machineLearning/blob/master/diamonds/Diamond-Analysis-1.ipynb',
   },
 ]
 
