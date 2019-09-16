@@ -320,25 +320,27 @@ export default function FooStack() {
               <Grid container spacing={4}>
                 {galleryInfo.map(card => (
                   <Grid item key={card} xs={12} sm={6} md={4}>
-                    <Card className={classes.card}>
-                      <CardMedia
-                        className={classes.cardMedia}
-                        image={card.imageLink}
-                      />
-                      <CardContent className={classes.cardContent}>
-                        <Typography gutterBottom variant="h5" component="h2">
-                          {card.heading}
-                        </Typography>
-                        <Typography>
-                          {card.text}
-                        </Typography>
-                      </CardContent>
-                      <CardActions>
-                        <Button size="small" color="primary" href={card.viewLink} >
-                          View
-                        </Button>
-                      </CardActions>
-                    </Card>
+                    <a href={card.viewLink}>
+                      <Card className={classes.card}>
+                        <CardMedia
+                          className={classes.cardMedia}
+                          image={card.imageLink}
+                        />
+                        <CardContent className={classes.cardContent}>
+                          <Typography gutterBottom variant="h5" component="h2">
+                            {card.heading}
+                          </Typography>
+                          <Typography>
+                            {card.text}
+                          </Typography>
+                        </CardContent>
+                        <CardActions>
+                          <Button size="small" color="primary" href={card.viewLink} >
+                            View
+                          </Button>
+                        </CardActions>
+                      </Card>
+                    </a>
                   </Grid>
                 ))}
               </Grid>
