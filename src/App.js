@@ -136,7 +136,7 @@ const galleryInfo = [
 const stackInfo = [
   {
     heading: 'Visualization',
-    text: 'Javascript React + D3.js based Charting (Altair, Dash, React-Vis',
+    text: 'Javascript React + D3.js based Charting (Altair, Dash, React-Vis)',
     imageLink: 'https://source.unsplash.com/random?1',
   },
   {
