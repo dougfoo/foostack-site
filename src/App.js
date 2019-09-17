@@ -1,6 +1,7 @@
 import React from 'react';
 import AppBar from '@material-ui/core/AppBar';
 import Button from '@material-ui/core/Button';
+import ButtonBase from '@material-ui/core/ButtonBase';
 import ThreeSixtyIcon from '@material-ui/icons/ThreeSixty';
 import Card from '@material-ui/core/Card';
 import CardActions from '@material-ui/core/CardActions';
@@ -75,6 +76,10 @@ const useStyles = makeStyles(theme => ({
   card2: {
     display: 'flex',
   },
+  cardAction: {
+    display: 'block',
+    textAlign: 'initial'
+  },
   cardMedia: {
     paddingTop: '56.25%', // 16:9
   },
@@ -124,7 +129,7 @@ const galleryInfo = [
     heading: 'Diamond Pricing',
     text: 'Price your diamond on the 4Cs and more (Azure Machine Learning) - Link only to WIP Notebooks for now!',
     imageLink: 'https://source.unsplash.com/random?3',
-    viewLink: 'https://github.com/dougfoo/machineLearning/blob/master/diamonds/Diamond-Analysis-1.ipynb',
+    viewLink: 'https://nbviewer.jupyter.org/github/dougfoo/machineLearning/blob/master/diamonds/Diamond-Analysis-1.ipynb',
   },
 ]
 
@@ -320,8 +325,11 @@ export default function FooStack() {
               <Grid container spacing={4}>
                 {galleryInfo.map(card => (
                   <Grid item key={card} xs={12} sm={6} md={4}>
-                    <a href={card.viewLink}>
-                      <Card className={classes.card}>
+                    <Card className={classes.card}>
+                      <ButtonBase
+                        className={classes.cardAction}
+                        onClick={e => { document.location.href = card.viewLink}}
+                      >
                         <CardMedia
                           className={classes.cardMedia}
                           image={card.imageLink}
@@ -339,8 +347,8 @@ export default function FooStack() {
                             View
                           </Button>
                         </CardActions>
-                      </Card>
-                    </a>
+                      </ButtonBase>
+                    </Card>
                   </Grid>
                 ))}
               </Grid>
