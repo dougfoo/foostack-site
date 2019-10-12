@@ -121,13 +121,13 @@ const galleryInfo = [
   },
   {
     heading: 'Ski Planning',
-    text: 'Plan your ski holiday based on weather statistics (React + D3 (Victory) and Spark/DataBricks) - Coming Soon!',
+    text: 'Plan your ski holiday based on weather statistics (Tech Stack TBD) - Coming Soon!',
     imageLink: 'https://source.unsplash.com/random?2',
     viewLink: 'http://clt-homicide.foostack.ai/',
   },
   {
     heading: 'Diamond Pricing',
-    text: 'Price your diamond on the 4Cs and more (Azure Machine Learning) - Link only to WIP Notebooks for now!',
+    text: 'Price your diamond on the 4Cs and more (React, Express, Mongo, Victory, Azure Machine Learning) - Live!',
     imageLink: 'https://source.unsplash.com/random?3',
     viewLink: 'http://diamonds.foostack.ai',
   },
@@ -136,7 +136,7 @@ const galleryInfo = [
 const stackInfo = [
   {
     heading: 'Visualization',
-    text: 'Javascript React + D3.js based Charting (Altair, Dash, React-Vis)',
+    text: 'Javascript React + D3.js based Charting (Altair, Dash, Victory)',
     imageLink: 'https://source.unsplash.com/random?1',
   },
   {
@@ -151,7 +151,7 @@ const stackInfo = [
   },
   {
     heading: 'Data Management',
-    text: 'MySQL, Hadoop, Oracle to hosted solutions on Azure (Hadoop/HDFS, Cloud SQL, Snowflake)',
+    text: 'MySQL, Hadoop, Mongo, Oracle to hosted solutions on Azure (Hadoop/HDFS, Cloud SQL, Snowflake)',
     imageLink: 'https://source.unsplash.com/random?4',
   },
   {
