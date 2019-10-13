@@ -121,9 +121,9 @@ const galleryInfo = [
   },
   {
     heading: 'Ski Planning',
-    text: 'Plan your ski holiday based on weather statistics (Tech Stack TBD) - Coming Soon!',
+    text: 'Plan your ski holiday based on weather statistics (Flutter, Express + TBD) - Beta Now !',
     imageLink: 'https://source.unsplash.com/random?2',
-    viewLink: 'http://clt-homicide.foostack.ai/',
+    viewLink: 'http://snow.foostack.ai/',
   },
   {
     heading: 'Diamond Pricing',
