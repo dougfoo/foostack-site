@@ -259,7 +259,7 @@ export default function FooStack() {
                       Doug started coding in Jr High on the Apple II and TRS 80, writing his first adventure games.
                       Since then he has been a DevOps engineer (before they called it DevOps), DBA and designer,
                       Software developer, System architect, Data Scientist (Financial Quant), Development and Program manager, and a Sr Executive.
-                      Doug prides himself with being able to develop across a full stack of technologies.
+                      Doug prides himself with being able to develop across a full stack of technologies.  Check out his articles on <a href="https://medium.com/@doug.foo">medium.com</a>
                     </Typography>
                   </CardContent>
                 </div>
