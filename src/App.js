@@ -120,7 +120,7 @@ const galleryInfo = [
     viewLink: 'http://clt-homicide.foostack.ai/chart/',
   },
   {
-    heading: 'Ski Planning',
+    heading: 'Ski Planning (Beta)',
     text: 'Plan your ski holiday based on weather statistics (Flutter, Express + TBD) - Beta Now !',
     imageLink: 'https://source.unsplash.com/random?2',
     viewLink: 'http://snow.foostack.ai/',
@@ -130,6 +130,18 @@ const galleryInfo = [
     text: 'Price your diamond on the 4Cs and more (React, Express, Mongo, Victory, Azure Machine Learning) - Live!',
     imageLink: 'https://source.unsplash.com/random?3',
     viewLink: 'http://diamonds.foostack.ai',
+  },
+  {
+    heading: 'World Time (Beta)',
+    text: 'Flutter App for Multi-Timezone viewing - Beta Now !',
+    imageLink: 'https://source.unsplash.com/random?4',
+    viewLink: 'https://play.google.com/store/apps/details?id=ai.foostack.worldtime',
+  },
+  {
+    heading: 'NLP Chat (Dev)',
+    text: 'Flutter App & Backend BERT realtime chat sentiment analyzer - In Development !',
+    imageLink: 'https://source.unsplash.com/random?5',
+    viewLink: '#',
   },
 ]
 
@@ -302,7 +314,7 @@ export default function FooStack() {
                   FooStack.Ai
                 </Typography>
                 <Typography variant="h5" align="center" color="textSecondary" paragraph>
-                  FooStack is an attempt to package a "Full Stack" Data Science env - weaving together best of breed
+                  FooStack is a "Full Stack" Data Science showcase++ - weaving together best of breed
                   technologies at each layer.  GUI/Presentation, Server logic, Machine Learning, Data Prep and Management</Typography>
                 <div className={classes.heroButtons}>
                   <Grid container spacing={2} justify="center">
