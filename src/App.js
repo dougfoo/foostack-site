@@ -139,9 +139,9 @@ const galleryInfo = [
   },
   {
     heading: 'NLP Chat (Dev)',
-    text: 'Flutter App & Backend BERT realtime chat sentiment analyzer - In Development !',
+    text: 'Flutter App & Backend BERT realtime chat sentiment analyzer - Beta Now !',
     imageLink: 'https://source.unsplash.com/random?5',
-    viewLink: '#',
+    viewLink: 'https://nlp.foostack.ai/web/',
   },
 ]
 
