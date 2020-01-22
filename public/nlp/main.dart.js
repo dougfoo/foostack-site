@@ -43780,7 +43780,7 @@ return!0},
 gam:function(){return"windows"},
 gi4:function(){return"\\"}}
 F.xt.prototype={
-K:function(a){return new S.oX(new F.pa("Sentiment Analysis Home Page",null),"Foo Sentiment Analysis Runner",X.Z_(null,C.ay),null)}}
+K:function(a){return new S.oX(new F.pa("Foo Sentiment Analysis Home Page",null),"Foo Sentiment Analysis Runner",X.Z_(null,C.ay),null)}}
 F.pa.prototype={
 aI:function(){return new F.t1(new D.lN(C.mR,new R.an(H.c([],u.u),u.A)),H.c([],u.cs),C.r)}}
 F.t1.prototype={
