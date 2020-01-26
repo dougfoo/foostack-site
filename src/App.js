@@ -138,7 +138,6 @@ const galleryInfo = [
     viewLink: 'https://play.google.com/store/apps/details?id=ai.foostack.worldtime',
   },
   {
-<<<<<<< HEAD
     heading: 'NLP Chat (Concept)',
     text: 'Next Generation Chat App that captures Sentiment Analysis in realtime (Flutter, Firestore, Azure) - Concept Phase !',
     imageLink: 'https://source.unsplash.com/random?2',
@@ -149,12 +148,6 @@ const galleryInfo = [
     text: 'Plan your ski holiday based on weather statistics (Flutter, Express + TBD) - Beta Now !',
     imageLink: 'https://source.unsplash.com/random?2',
     viewLink: 'http://snow.foostack.ai/',
-=======
-    heading: 'NLP Chat (Dev)',
-    text: 'Flutter App & Backend BERT realtime chat sentiment analyzer - Beta Now !',
-    imageLink: 'https://source.unsplash.com/random?5',
-    viewLink: 'http://foostack.ai/nlp/',
->>>>>>> be65e2b8d59acc1ea7bb45a40f11aef8f9fc8113
   },
 ]
 
