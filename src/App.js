@@ -114,34 +114,40 @@ const useStyles = makeStyles(theme => ({
 
 const galleryInfo = [
   {
-    heading: 'Crime Statistics',
-    text: 'Homicide Crime Statistics (Python/Django + Altair) - Live!',
-    imageLink: 'https://source.unsplash.com/random?1',
-    viewLink: 'http://clt-homicide.foostack.ai/chart/',
-  },
-  {
-    heading: 'Ski Planning (Beta)',
-    text: 'Plan your ski holiday based on weather statistics (Flutter, Express + TBD) - Beta Now !',
-    imageLink: 'https://source.unsplash.com/random?2',
-    viewLink: 'http://snow.foostack.ai/',
-  },
-  {
     heading: 'Diamond Pricing',
     text: 'Price your diamond on the 4Cs and more (React, Express, Mongo, Victory, Azure Machine Learning) - Live!',
     imageLink: 'https://source.unsplash.com/random?3',
     viewLink: 'http://diamonds.foostack.ai',
   },
   {
+    heading: 'NLP Sentiment Aggregator (Dev)',
+    text: 'Flutter App & Backend Azuresentiment analyzer (Flutter, Azure) - In Development !',
+    imageLink: 'https://source.unsplash.com/random?5',
+    viewLink: 'http://foostack.ai/nlp/',
+  },
+  {
+    heading: 'Crime Statistics',
+    text: 'Homicide Crime Statistics (Python/Django + Altair) - Live!',
+    imageLink: 'https://source.unsplash.com/random?1',
+    viewLink: 'http://clt-homicide.foostack.ai/chart/',
+  },
+  {
     heading: 'World Time (Beta)',
-    text: 'Flutter App for Multi-Timezone viewing - Beta Now !',
+    text: 'Flutter App for Multi-Timezone viewing - Beta Now (Flutter Android App) !',
     imageLink: 'https://source.unsplash.com/random?4',
     viewLink: 'https://play.google.com/store/apps/details?id=ai.foostack.worldtime',
   },
   {
-    heading: 'NLP Chat (Dev)',
-    text: 'Flutter App & Backend BERT realtime chat sentiment analyzer - In Development !',
-    imageLink: 'https://source.unsplash.com/random?5',
-    viewLink: '#',
+    heading: 'NLP Chat (Concept)',
+    text: 'Next Generation Chat App that captures Sentiment Analysis in realtime (Flutter, Firestore, Azure) - Concept Phase !',
+    imageLink: 'https://source.unsplash.com/random?2',
+    viewLink: 'https://medium.com/flutter-community/nlp-chat-on-flutter-azure-676aa4768fbb',
+  },
+  {
+    heading: 'Ski Planning (Beta)',
+    text: 'Plan your ski holiday based on weather statistics (Flutter, Express + TBD) - Beta Now !',
+    imageLink: 'https://source.unsplash.com/random?2',
+    viewLink: 'http://snow.foostack.ai/',
   },
 ]
 
