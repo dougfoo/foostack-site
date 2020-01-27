@@ -146,7 +146,7 @@ const galleryInfo = [
   {
     heading: 'Ski Planning (Beta)',
     text: 'Plan your ski holiday based on weather statistics (Flutter, Express + TBD) - Beta Now !',
-    imageLink: 'https://source.unsplash.com/random?2',
+    imageLink: 'https://source.unsplash.com/random?6',
     viewLink: 'http://snow.foostack.ai/',
   },
 ]
