@@ -4,12 +4,12 @@ const RESOURCES = {
   "/assets\AssetManifest.json": "2efbb41d7877d10aac9d091f58ccd7b9",
 "/assets\FontManifest.json": "01700ba55b08a6141f33e168c4a6c22f",
 "/assets\fonts\MaterialIcons-Regular.ttf": "56d3ffdef7a25659eab6a68a3fbfaf16",
-"/assets\LICENSE": "c7571bb1f995fb47ff82eb533f2c09c8",
+"/assets\LICENSE": "577875bf21131f1d04bd78bf9edbfbea",
 "/assets\packages\cupertino_icons\assets\CupertinoIcons.ttf": "115e937bb829a890521f72d2e664b632",
 "/icons\Icon-192.png": "ac9a721a12bbc803b44f645561ecb1e1",
 "/icons\Icon-512.png": "96e752610906ba2a93c65f8abe1645f1",
 "/index.html": "8c26caebf38c6174524c4cc5196be0ee",
-"/main.dart.js": "1e47f7e1347f3e8d8b30d6d5f8af8a58",
+"/main.dart.js": "65e354e6c5439483b873855b2a4df0e3",
 "/manifest.json": "a7841a8335398dc7d4e29fa57c1d448a"
 };
 
