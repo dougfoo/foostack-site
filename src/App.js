@@ -144,10 +144,10 @@ const galleryInfo = [
     viewLink: 'https://medium.com/flutter-community/nlp-chat-on-flutter-azure-676aa4768fbb',
   },
   {
-    heading: 'Ski Planning (Beta)',
-    text: 'Plan your ski holiday based on weather statistics (Flutter, Express + TBD) - Beta Now !',
+    heading: 'Tokyo COVID19 Stats (Beta)',
+    text: 'Tracker for Tokyo COVID Cases - Hosted on AWS - Beta Now !',
     imageLink: 'https://source.unsplash.com/random?6',
-    viewLink: 'http://snow.foostack.ai/',
+    viewLink: 'http://tokyocovid.foostack.org/',
   },
 ]
 
