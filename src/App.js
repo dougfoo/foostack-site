@@ -144,10 +144,10 @@ const galleryInfo = [
     viewLink: 'https://medium.com/flutter-community/nlp-chat-on-flutter-azure-676aa4768fbb',
   },
   {
-    heading: 'Tokyo COVID19 Stats (Beta)',
-    text: 'Tracker for Tokyo COVID Cases - Hosted on AWS - Beta Now !',
+    heading: 'Web3 ETH (Beta)',
+    text: 'Web3 ETH Smart Contracts demo - Beta Now !',
     imageLink: 'https://source.unsplash.com/random?6',
-    viewLink: 'http://tokyocovid.foostack.org/',
+    viewLink: 'http://web3.foostack.org/',
   },
 ]
 
