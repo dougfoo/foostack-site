@@ -147,7 +147,7 @@ const galleryInfo = [
     heading: 'Web3 ETH (Beta)',
     text: 'Web3 ETH Smart Contracts demo - Beta Now !',
     imageLink: 'https://source.unsplash.com/random?6',
-    viewLink: 'http://web3.foostack.org/',
+    viewLink: 'http://web3.foostack.ai/',
   },
 ]
 
